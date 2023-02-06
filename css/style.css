@@ -1,0 +1,15 @@
+.w-3 {
+    width: calc(100% / 3 - 0.7rem);
+}
+
+.gap-1rem {
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+i {
+    margin-right: 0.4rem;
+}
