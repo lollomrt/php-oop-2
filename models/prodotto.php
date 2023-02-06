@@ -1,6 +1,6 @@
 <?php
     
-    class prodotti {
+    class prodotto {
         public $immagine;
         public $titolo;
         public $prezzo;
@@ -8,7 +8,7 @@
 
         public function __construct($_immagine, $_titolo, $_prezzo, categoria $_categoria){
             $this->immagine = $_immagine;
-            $this->tiolo = $_titolo;
+            $this->titolo = $_titolo;
             $this->prezzo = $_prezzo;
             $this->categoria = $_categoria;
         }

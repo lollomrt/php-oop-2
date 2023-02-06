@@ -16,7 +16,9 @@
     <div>
         <pre>
         <?php
-           var_dump($prodotto_1)
+           var_dump($prodotto_1);
+           var_dump($prodotto_2);
+           var_dump($prodotto_3);
         ?>
         </pre>
     </div>
