@@ -27,8 +27,8 @@
                     </div>
                     <div class="container w-75 d-flex flex-wrap gap-1rem ">
                         <?php foreach($prodotti as $elem) { ?>
-                            <div class="card w-3">
-                                <img class="card-img-top" src="<?php echo $elem->immagine ?>" alt="Card image cap">
+                            <div class="card w-3 capitalize">
+                                <img class="card-img-top mt-2" src="<?php echo $elem->immagine ?>" alt="Card image cap">
                                 <div class="card-body">
                                     <h1><?php echo $elem->titolo ?></h1>
                                     <span><i class="<?php echo $elem->categoria->icona ?>"></i><?php echo $elem->categoria->specie ?></span>
@@ -49,7 +49,7 @@
                                             if(isset($elem->dimensioni)){
                                                echo '<p><strong>dimensioni: </strong>'. $elem->dimensioni.'</p>';
                                             }else{
-                                                echo '<p><strong>ingredienti: </strong>'. $elem->ingredienti.'</p>';
+                                                echo '<p><strong>ingredienti: </strong>'. implode(', ', $elem->ingredienti).'</p>';
                                             }
                                         ?>
                                     </div>
