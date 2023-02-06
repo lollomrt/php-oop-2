@@ -5,8 +5,6 @@
     include __DIR__.'./models/cibo.php';
     include __DIR__.'./models/accessorio.php';
 
-    
-
     $prodotto_1 = new cibo ('https://www.amoreanimaleshop.it/wp-content/uploads/2021/05/Royal-Canin-Dog-Mini-Adult.jpg', 'Royal Canin Mini Adult', '43,99€', new categoria ('fa-solid fa-dog', 'cane'), '545g', ['prosciutto', 'riso']);
     $prodotto_2 = new cibo ('https://www.bauzaar.it/media/catalog/product/t/o/tonno_e_riso_cane_1.jpg?width=700&height=700&store=default&image-type=image', 'halmo nature olistic aintenance medium large tonno e riso', '44,99€', new categoria ('fa-solid fa-dog', 'cane'), '600g', ['manzo', 'cereali']);
     $prodotto_3 = new cibo ('https://www.amoreanimaleshop.it/wp-content/uploads/2021/02/Almo-Nature-Cat-Daily-Manzo-400.jpg', 'halmo nature cat daily lattina', '34,99€', new categoria ('fa-solid fa-cat', 'gatto'), '400g', ['tonno', 'pollo', 'prosciutto']);

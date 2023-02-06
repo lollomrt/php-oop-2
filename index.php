@@ -18,7 +18,7 @@
         <div class="container-fluid my-5">
             <div class="row">
                 <div class="col">
-                    <div class="container">
+                    <div class="container w-75">
                         <div class="row">
                             <div class="col">
                                 <h1 class="my-5">I nostri prodotti</h1>
@@ -33,7 +33,26 @@
                                     <h1><?php echo $elem->titolo ?></h1>
                                     <span><i class="<?php echo $elem->categoria->icona ?>"></i><?php echo $elem->categoria->specie ?></span>
                                     <p><strong>prezzo:</strong> <?php echo $elem->prezzo ?></p>
-                                    <p><strong>prezzo:</strong> <?php echo $elem->prezzo ?></p>
+                                    <div>
+                                        <?php
+                                            if(isset($elem->caratteristiche)){
+                                               echo '<p><strong>caratteristiche: </strong>'. $elem->caratteristiche.'</p>';
+                                            }else if(isset($elem->peso_netto)){
+                                                echo '<p><strong>peso-netto: </strong>'. $elem->peso_netto.'</p>';
+                                            }else{
+                                                echo '<p><strong>peso-netto: </strong>'. $elem->materiale.'</p>';
+                                            }
+                                        ?>
+                                    </div>
+                                    <div>
+                                        <?php
+                                            if(isset($elem->dimensioni)){
+                                               echo '<p><strong>dimensioni: </strong>'. $elem->dimensioni.'</p>';
+                                            }else{
+                                                echo '<p><strong>ingredienti: </strong>'. $elem->ingredienti.'</p>';
+                                            }
+                                        ?>
+                                    </div>
                                 </div>
                             </div>
                         <?php } ?>
